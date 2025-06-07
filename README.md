@@ -1,13 +1,13 @@
-# 🚗 WARM-3D: Weakly-supervised Adaptive Representation for Monocular 3D Object Detection
+# 🚗 WARM-3D: A Weakly-Supervised Sim2Real Domain Adaptation Framework for Roadside Monocular 3D Object Detection
 
-This repository contains the official implementation of our paper "WARM-3D: Weakly-supervised Adaptive Representation for Monocular 3D Object Detection" (https://ieeexplore.ieee.org/document/10919929).
+This repository contains the official implementation of our paper "WARM-3D: A Weakly-Supervised Sim2Real Domain Adaptation Framework for Roadside Monocular 3D Object Detection" (https://ieeexplore.ieee.org/document/10919929).
 
 ## 📝 Introduction
 
-WARM-3D is a novel approach for monocular 3D object detection that leverages weakly-supervised learning to improve performance. Our method introduces adaptive representation learning to better capture 3D object properties from monocular images.
+Existing roadside perception systems are limited by the absence of publicly available, large-scale, high-quality 3D datasets. Exploring the use of cost-effective, extensive synthetic datasets offers a viable solution to tackle this challenge and enhance the performance of roadside monocular 3D detection. In this study, we introduce the TUMTraf Synthetic Dataset, offering a diverse and substantial collection of high-quality 3D data to augment scarce real-world datasets. Besides, we present WARM-3D, a concise yet effective framework to aid the Sim2Real domain transfer for roadside monocular 3D detection. Our method leverages cheap synthetic datasets and 2D labels from an off-the-shelf 2D detector for weak supervision. We show that WARM-3D significantly enhances performance, achieving a +12.40% increase in mAP3D over the baseline with only pseudo-2D supervision. With 2D GT as weak labels, WARM-3D even reaches performance close to the Oracle baseline. Moreover, WARM-3D improves the ability of 3D detectors to unseen sample recognition across various real-world environments, highlighting its potential for practical applications.
 
 <div align="center">
-  <img src="Asset/TUMTraff-Synthetic.png" width="400"/>
+  <img src="Asset/TUMTraff-Synthetic.png" width="500"/>
   <br>
   <em>Overview of TUMTraffic Synthetic Dataset</em>
 </div>
