@@ -7,7 +7,7 @@ This repository contains the official implementation of our paper "WARM-3D: Weak
 WARM-3D is a novel approach for monocular 3D object detection that leverages weakly-supervised learning to improve performance. Our method introduces adaptive representation learning to better capture 3D object properties from monocular images.
 
 <div align="center">
-  <img src="Asset/TUMTraff-Synthetic.png" width="800"/>
+  <img src="Asset/TUMTraff-Synthetic.png" width="400"/>
   <br>
   <em>Overview of TUMTraffic Synthetic Dataset</em>
 </div>
@@ -45,7 +45,7 @@ pip install -r requirements.txt
    - For more information about the dataset, visit [TUMTraf Dataset Page](https://innovation-mobility.com/en/project-providentia/a9-dataset/)
 
 <div align="center">
-  <img src="Asset/TUMTraff-Synthetic-distribution.png" width="800"/>
+  <img src="Asset/TUMTraff-Synthetic-distribution.png" width="400"/>
   <br>
   <em>Distribution of TUMTraffic Synthetic Dataset</em>
 </div>
