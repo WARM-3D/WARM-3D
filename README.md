@@ -112,5 +112,5 @@ If you find this work useful for your research, please cite our paper:
 
 ## 🙏 Acknowledgments
 
-This work is built upon the excellent [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR) codebase. We thank the authors for their great work and for making their code publicly available. Please also cite their paper if you use our code:
+This work is built upon the excellent [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR) codebase. We thank the authors for their great work and for making their code publicly available.
 
