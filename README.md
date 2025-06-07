@@ -114,15 +114,3 @@ If you find this work useful for your research, please cite our paper:
 
 This work is built upon the excellent [MonoDETR](https://github.com/ZrrSkywalker/MonoDETR) codebase. We thank the authors for their great work and for making their code publicly available. Please also cite their paper if you use our code:
 
-```bibtex
-@article{zhang2022monodetr,
-  title={MonoDETR: Depth-guided Transformer for Monocular 3D Object Detection},
-  author={Zhang, Renrui and Qiu, Han and Wang, Tai and Xu, Xuanzhuo and Guo, Ziyu and Qiao, Yu and Gao, Peng and Li, Hongsheng},
-  journal={ICCV 2023},
-  year={2022}
-}
-```
-
-## 📧 Contact
-
-For any questions, please feel free to contact [Your Contact Information].
