@@ -1,0 +1,4 @@
+# ninja log v5
+0	3996	1715626965660878238	/mnt/ssd_4tb/workspace/7_student/deyu/workspace/MonoDETR/lib/models/monodetr/ops/build/temp.linux-x86_64-cpython-310/mnt/ssd_4tb/workspace/7_student/deyu/workspace/MonoDETR/lib/models/monodetr/ops/src/cpu/ms_deform_attn_cpu.o	a6d77e80a4d8940c
+0	14189	1715626975852795983	/mnt/ssd_4tb/workspace/7_student/deyu/workspace/MonoDETR/lib/models/monodetr/ops/build/temp.linux-x86_64-cpython-310/mnt/ssd_4tb/workspace/7_student/deyu/workspace/MonoDETR/lib/models/monodetr/ops/src/vision.o	e34b91ecd8bc064b
+0	28580	1715626990240679861	/mnt/ssd_4tb/workspace/7_student/deyu/workspace/MonoDETR/lib/models/monodetr/ops/build/temp.linux-x86_64-cpython-310/mnt/ssd_4tb/workspace/7_student/deyu/workspace/MonoDETR/lib/models/monodetr/ops/src/cuda/ms_deform_attn_cuda.o	98cb275edea8c79c

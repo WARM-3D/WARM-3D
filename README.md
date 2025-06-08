@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 1. Train and evaluation on TUMTraffic dataset:
 ```bash
-bash MonoDETR/train.bash MonoDETR/configs/monodetr.yaml
+bash train.bash configs/monodetr.yaml
 ```
 
 <div align="center">
@@ -90,7 +90,7 @@ bash MonoDETR/train.bash MonoDETR/configs/monodetr.yaml
 
 1. Evaluate on test set:
 ```bash
-bash MonoDETR/test.bash MonoDETR/configs/monodetr_detect.yaml
+bash test.bash configs/monodetr_detect.yaml
 ```
 
 ## 📚 Citation

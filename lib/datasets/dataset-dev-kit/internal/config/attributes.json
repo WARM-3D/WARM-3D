@@ -1,0 +1,748 @@
+{
+  "classes": {
+    "CAR": {
+      "annotation_color": "#00CCF6",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "BLACK",
+            "WHITE",
+            "GRAY",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "number_of_trailers",
+          "style": "dropdown",
+          "values": [
+            0,
+            1,
+            2
+          ],
+          "default": -1
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "TRUCK": {
+      "annotation_color": "#56FFB6",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "GRAY",
+            "BLACK",
+            "WHITE",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "number_of_trailers",
+          "style": "dropdown",
+          "values": [
+            1,
+            0,
+            2
+          ],
+          "default": -1
+        },
+        {
+          "name": "type",
+          "style": "dropdown",
+          "values": [
+            "delivery_truck",
+            "pickup_truck"
+          ],
+          "default": ""
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "TRAILER": {
+      "annotation_color": "#5AFF7E",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "GRAY",
+            "BLACK",
+            "WHITE",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "type",
+          "style": "dropdown",
+          "values": [
+            "container",
+            "box",
+            "dump",
+            "vehicle_transport",
+            "mixer",
+            "tank",
+            "flatbed",
+            "other"
+          ],
+          "default": ""
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        }
+      ]
+    },
+    "VAN": {
+      "annotation_color": "#EBCF36",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "WHITE",
+            "BLACK",
+            "GRAY",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "number_of_trailers",
+          "style": "dropdown",
+          "values": [
+            0,
+            1,
+            2
+          ],
+          "default": -1
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "MOTORCYCLE": {
+      "annotation_color": "#B9A454",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "BLACK",
+            "WHITE",
+            "GRAY",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "has_rider",
+          "style": "checkbox",
+          "values": [
+            true,
+            false
+          ],
+          "default": true
+        },
+        {
+          "name": "type",
+          "style": "dropdown",
+          "values": [
+            "motorbike",
+            "scooter"
+          ],
+          "default": ""
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "BUS": {
+      "annotation_color": "#D98A86",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "BLACK",
+            "WHITE",
+            "GRAY",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "number_of_trailers",
+          "style": "dropdown",
+          "values": [
+            0,
+            1,
+            2
+          ],
+          "default": -1
+        },
+        {
+          "name": "type",
+          "style": "dropdown",
+          "values": [
+            "rigid",
+            "bendy"
+          ],
+          "default": ""
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "PEDESTRIAN": {
+      "annotation_color": "#E976F9",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        }
+      ]
+    },
+    "BICYCLE": {
+      "annotation_color": "#B18CFF",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "has_rider",
+          "style": "checkbox",
+          "values": [
+            true,
+            false
+          ],
+          "default": true
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "EMERGENCY_VEHICLE": {
+      "annotation_color": "#C7C7C7",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "BLACK",
+            "WHITE",
+            "GRAY",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "type",
+          "style": "dropdown",
+          "values": [
+            "ambulance",
+            "police_vehicle",
+            "fire_truck",
+            "tractor",
+            "other"
+          ],
+          "default": ""
+        },
+        {
+          "name": "flashing_emergency_lights",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      ]
+    },
+    "OTHER": {
+      "annotation_color": "#C7C7C7",
+      "attributes": [
+        {
+          "name": "sensor_id",
+          "style": "dropdown_multiselect",
+          "values": [
+            "s110_camera_basler_south1_8mm",
+            "s110_camera_basler_south2_8mm",
+            "s110_lidar_ouster_south",
+            "s110_lidar_ouster_north"
+          ],
+          "default": ""
+        },
+        {
+          "name": "body_color",
+          "style": "dropdown",
+          "values": [
+            "BLACK",
+            "WHITE",
+            "GRAY",
+            "BLUE",
+            "BROWN",
+            "RED",
+            "GREEN",
+            "ORANGE",
+            "YELLOW",
+            "PURPLE",
+            "PINK",
+            "OTHER"
+          ],
+          "default": ""
+        },
+        {
+          "name": "occlusion_level",
+          "style": "dropdown",
+          "values": [
+            "NOT_OCCLUDED",
+            "PARTIALLY_OCCLUDED",
+            "MOSTLY_OCCLUDED"
+          ],
+          "default": ""
+        },
+        {
+          "name": "flashing_emergency_lights",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        {
+          "name": "num_points",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "score",
+          "style": "number",
+          "value": -1,
+          "default": -1
+        },
+        {
+          "name": "is_electric",
+          "style": "checkbox",
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        {
+          "name": "number_of_trailers",
+          "style": "dropdown",
+          "values": [
+            0,
+            1,
+            2
+          ],
+          "default": -1
+        }
+      ]
+    }
+  }
+}

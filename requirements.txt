@@ -1,0 +1,13 @@
+matplotlib
+moviepy
+numba
+numpy
+opencv_python
+Pillow
+pyquaternion
+PyYAML
+scikit_image
+scikit_learn
+scipy
+setuptools
+tqdm
